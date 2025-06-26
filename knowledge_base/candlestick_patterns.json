@@ -1,0 +1,54 @@
+{
+  "bullish_patterns": {
+    "hammer": {
+      "description": "Martello - Forte reversal bullish",
+      "success_rate": 0.72,
+      "conditions": {
+        "body_ratio": "< 0.3",
+        "lower_shadow": "> 2x body",
+        "upper_shadow": "< 0.1x body",
+        "trend_context": "downtrend"
+      },
+      "entry_strategy": "Buy on close above hammer high",
+      "stop_loss": "Below hammer low",
+      "take_profit": "1.5:1 risk/reward"
+    },
+    "morning_star": {
+      "description": "Stella del mattino - Potente reversal",
+      "success_rate": 0.78,
+      "conditions": {
+        "candles": 3,
+        "pattern": "long_red + small_body + long_green",
+        "gaps": "required between candles"
+      },
+      "entry_strategy": "Buy on third candle confirmation",
+      "reliability": "high"
+    },
+    "bullish_engulfing": {
+      "description": "Engulfing bullish - Forte momentum",
+      "success_rate": 0.68,
+      "volume_requirement": "Above average on engulfing candle",
+      "entry_strategy": "Buy on close of engulfing candle"
+    }
+  },
+  "bearish_patterns": {
+    "shooting_star": {
+      "description": "Stella cadente - Reversal bearish",
+      "success_rate": 0.69,
+      "conditions": {
+        "upper_shadow": "> 2x body",
+        "lower_shadow": "minimal",
+        "trend_context": "uptrend"
+      }
+    },
+    "evening_star": {
+      "description": "Stella della sera",
+      "success_rate": 0.75,
+      "reliability": "very_high"
+    },
+    "bearish_engulfing": {
+      "description": "Engulfing bearish",
+      "success_rate": 0.71
+    }
+  }
+}

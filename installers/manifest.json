@@ -1,0 +1,55 @@
+{
+  "name": "AI Crypto Trading Bot",
+  "version": "1.0.0",
+  "build_date": "2025-06-26T20:16:43.764768",
+  "platforms": {
+    "windows": {
+      "supported": [
+        "Windows 10",
+        "Windows 11"
+      ],
+      "architecture": [
+        "x64"
+      ],
+      "installer": "AI_Trading_Bot_Windows_Installer.zip"
+    },
+    "macos": {
+      "supported": [
+        "macOS 10.15+"
+      ],
+      "architecture": [
+        "x64",
+        "arm64"
+      ],
+      "installer": "AI_Trading_Bot_macOS_Installer.zip"
+    },
+    "linux": {
+      "supported": [
+        "Ubuntu 18.04+",
+        "Debian 10+",
+        "CentOS 7+",
+        "RHEL 7+"
+      ],
+      "architecture": [
+        "x64"
+      ],
+      "installer": "AI_Trading_Bot_Linux_Installer.zip"
+    }
+  },
+  "features": [
+    "24/7 Autonomous AI Trading",
+    "Multi-Exchange Support (5+ exchanges)",
+    "Advanced Quantitative Analysis",
+    "Real-time Sentiment Analysis",
+    "HuggingFace AI Models Integration",
+    "Smart Performance Optimization",
+    "Enterprise Security & Encryption",
+    "Remote Access & Deployment Ready"
+  ],
+  "requirements": {
+    "python": "3.8+",
+    "memory": "2GB minimum, 4GB+ recommended",
+    "disk": "1GB minimum, 5GB+ recommended",
+    "network": "Internet connection required"
+  }
+}

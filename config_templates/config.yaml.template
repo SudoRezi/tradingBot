@@ -1,0 +1,397 @@
+# AI Crypto Trading Bot - Main Configuration Template
+# Copy this file to config/config.yaml and customize for your environment
+
+# =============================================================================
+# SYSTEM CONFIGURATION
+# =============================================================================
+system:
+  platform: auto                           # auto | windows | macos | linux
+  architecture: auto                       # auto | x64 | arm64
+  install_path: "~/ai-trading-bot"          # Installation directory
+  log_directory: "logs"                     # Log files directory
+  data_directory: "data"                    # Data storage directory
+  backup_directory: "backups"               # Backup files directory
+  
+  # Performance settings
+  max_cpu_usage: 80                         # Maximum CPU usage percentage
+  max_memory_usage: 85                      # Maximum memory usage percentage
+  thread_pool_size: 4                       # Number of worker threads
+
+# =============================================================================
+# TRADING CONFIGURATION
+# =============================================================================
+trading:
+  mode: simulation                          # simulation | paper | live
+  initial_capital: 10000                    # Starting capital in USD
+  max_positions: 5                          # Maximum concurrent positions
+  risk_percentage: 2.0                      # Risk per trade (% of capital)
+  
+  # Position management
+  position_sizing:
+    method: "fixed_percentage"              # fixed_percentage | kelly | volatility_adjusted
+    percentage: 20.0                        # Percentage of capital per position
+    max_position_size: 5000                 # Maximum position size in USD
+    min_position_size: 100                  # Minimum position size in USD
+  
+  # Risk management
+  risk_management:
+    stop_loss_percentage: 5.0               # Default stop loss percentage
+    take_profit_percentage: 10.0            # Default take profit percentage
+    max_daily_loss: 1000                    # Maximum daily loss in USD
+    max_drawdown: 20.0                      # Maximum drawdown percentage
+    trailing_stop: true                     # Enable trailing stops
+    trailing_stop_percentage: 3.0           # Trailing stop percentage
+  
+  # Supported exchanges
+  exchanges:
+    - name: binance
+      enabled: false
+      testnet: true
+      priority: 1
+      fee_structure:
+        maker: 0.001                        # 0.1%
+        taker: 0.001                        # 0.1%
+      
+    - name: coinbase
+      enabled: false
+      sandbox: true
+      priority: 2
+      fee_structure:
+        maker: 0.005                        # 0.5%
+        taker: 0.005                        # 0.5%
+      
+    - name: bybit
+      enabled: false
+      testnet: true
+      priority: 3
+      fee_structure:
+        maker: 0.001                        # 0.1%
+        taker: 0.001                        # 0.1%
+
+# =============================================================================
+# AI MODEL CONFIGURATION
+# =============================================================================
+ai_models:
+  optimization: cpu                         # cpu | gpu | arm | auto
+  memory_limit: 2048                        # Memory limit in MB
+  cache_size: 512                           # Cache size in MB
+  inference_timeout: 30                     # Inference timeout in seconds
+  
+  # Built-in models
+  models:
+    - name: trading_classifier
+      type: sklearn
+      enabled: true
+      priority: 1
+      confidence_threshold: 0.7
+      
+    - name: sentiment_analyzer
+      type: lightweight
+      enabled: true
+      priority: 2
+      confidence_threshold: 0.6
+      
+    - name: market_regime_detector
+      type: statistical
+      enabled: true
+      priority: 3
+      lookback_period: 50
+      
+    - name: volatility_predictor
+      type: garch
+      enabled: true
+      priority: 4
+      window_size: 100
+  
+  # HuggingFace models (downloaded)
+  huggingface_models:
+    enabled: true
+    cache_directory: "models/huggingface"
+    auto_update: false
+    models: []                              # Populated by model manager
+  
+  # Model ensemble settings
+  ensemble:
+    enabled: true
+    method: "weighted_average"              # weighted_average | voting | stacking
+    weights: "performance_based"            # equal | performance_based | manual
+    rebalance_frequency: "weekly"           # daily | weekly | monthly
+
+# =============================================================================
+# STRATEGY CONFIGURATION
+# =============================================================================
+strategies:
+  # Standard trading strategies
+  standard:
+    enabled: true
+    allocation: 60                          # Percentage of capital
+    strategies:
+      - name: "moving_average_crossover"
+        enabled: true
+        weight: 0.3
+        parameters:
+          short_window: 12
+          long_window: 26
+          
+      - name: "rsi_divergence"
+        enabled: true
+        weight: 0.25
+        parameters:
+          rsi_period: 14
+          overbought: 70
+          oversold: 30
+          
+      - name: "bollinger_bands_reversion"
+        enabled: true
+        weight: 0.25
+        parameters:
+          period: 20
+          std_dev: 2
+          
+      - name: "macd_momentum"
+        enabled: true
+        weight: 0.2
+        parameters:
+          fast_period: 12
+          slow_period: 26
+          signal_period: 9
+  
+  # High-frequency trading
+  high_frequency:
+    enabled: false
+    allocation: 20                          # Percentage of capital
+    max_hold_time: 300                      # Maximum hold time in seconds
+    min_profit_threshold: 0.1               # Minimum profit threshold percentage
+    
+  # Arbitrage strategies
+  arbitrage:
+    enabled: false
+    allocation: 20                          # Percentage of capital
+    min_spread: 0.2                         # Minimum spread percentage
+    max_execution_time: 10                  # Maximum execution time in seconds
+
+# =============================================================================
+# MARKET DATA CONFIGURATION
+# =============================================================================
+market_data:
+  # Data sources priority
+  sources:
+    - name: "exchange_native"
+      enabled: true
+      priority: 1
+      
+    - name: "alpha_vantage"
+      enabled: false
+      priority: 2
+      
+    - name: "coingecko"
+      enabled: true
+      priority: 3
+  
+  # Data collection settings
+  collection:
+    real_time: true
+    batch_size: 1000
+    update_frequency: 5                     # Seconds between updates
+    historical_lookback: 365                # Days of historical data
+    
+  # Timeframes to collect
+  timeframes:
+    - "1m"
+    - "5m"
+    - "15m"
+    - "1h"
+    - "4h"
+    - "1d"
+  
+  # Symbols to track
+  symbols:
+    - "BTC/USD"
+    - "ETH/USD"
+    - "BNB/USD"
+    - "ADA/USD"
+    - "SOL/USD"
+    - "MATIC/USD"
+    - "DOT/USD"
+    - "AVAX/USD"
+
+# =============================================================================
+# PERFORMANCE OPTIMIZATION
+# =============================================================================
+performance:
+  cpu_optimization: true
+  memory_optimization: true
+  threading: true
+  max_threads: 4
+  
+  # Caching settings
+  cache:
+    enabled: true
+    size_limit: 1024                        # MB
+    ttl: 3600                              # Time to live in seconds
+    
+  # Database optimization
+  database:
+    connection_pool: 10
+    query_timeout: 30
+    batch_size: 1000
+    
+  # Network optimization
+  network:
+    timeout: 30
+    retry_attempts: 3
+    rate_limit: 10                          # Requests per second
+
+# =============================================================================
+# SECURITY CONFIGURATION
+# =============================================================================
+security:
+  encryption: true
+  key_rotation: true
+  audit_logging: true
+  
+  # API security
+  api_protection:
+    enabled: true
+    rate_limiting: true
+    request_signing: true
+    ip_whitelist: []
+    
+  # Session management
+  session:
+    timeout: 3600                           # Session timeout in seconds
+    max_sessions: 5                         # Maximum concurrent sessions
+    
+  # Backup encryption
+  backup:
+    encryption: true
+    compression: true
+    retention_days: 30
+
+# =============================================================================
+# NOTIFICATION CONFIGURATION
+# =============================================================================
+notifications:
+  # Email notifications
+  email:
+    enabled: false
+    events:
+      - "trade_executed"
+      - "position_closed"
+      - "stop_loss_triggered"
+      - "take_profit_hit"
+      - "system_error"
+      - "daily_summary"
+    
+  # Telegram notifications
+  telegram:
+    enabled: false
+    events:
+      - "trade_executed"
+      - "system_error"
+      - "daily_summary"
+    
+  # Discord notifications
+  discord:
+    enabled: false
+    events:
+      - "trade_executed"
+      - "system_error"
+
+# =============================================================================
+# WEB INTERFACE CONFIGURATION
+# =============================================================================
+streamlit:
+  host: "0.0.0.0"
+  port: 5000
+  theme: "dark"
+  headless: false
+  
+  # Page configuration
+  pages:
+    - name: "dashboard"
+      enabled: true
+    - name: "trading"
+      enabled: true
+    - name: "analytics"
+      enabled: true
+    - name: "settings"
+      enabled: true
+    
+  # Chart settings
+  charts:
+    default_timeframe: "1h"
+    max_points: 1000
+    refresh_interval: 5                     # Seconds
+
+# =============================================================================
+# LOGGING CONFIGURATION
+# =============================================================================
+logging:
+  level: "INFO"                             # DEBUG | INFO | WARNING | ERROR
+  format: "detailed"                        # simple | detailed | json
+  
+  # File logging
+  file:
+    enabled: true
+    max_size: "100MB"
+    max_files: 10
+    rotation: "daily"
+    
+  # Console logging
+  console:
+    enabled: true
+    level: "INFO"
+    
+  # Audit logging
+  audit:
+    enabled: true
+    events:
+      - "trade_executed"
+      - "position_opened"
+      - "position_closed"
+      - "configuration_changed"
+      - "api_key_accessed"
+
+# =============================================================================
+# DEVELOPMENT & TESTING
+# =============================================================================
+development:
+  debug_mode: false
+  mock_trading: false
+  simulation_speed: 1.0
+  profiling: false
+  
+  # Testing configuration
+  testing:
+    paper_trading: true
+    backtesting: true
+    stress_testing: false
+    
+  # Monitoring
+  monitoring:
+    performance_tracking: true
+    memory_profiling: false
+    cpu_profiling: false
+
+# =============================================================================
+# ADVANCED FEATURES
+# =============================================================================
+advanced:
+  # Machine learning features
+  ml_features:
+    auto_feature_engineering: true
+    model_retraining: true
+    hyperparameter_optimization: false
+    
+  # Portfolio management
+  portfolio:
+    rebalancing: true
+    rebalance_frequency: "weekly"
+    correlation_threshold: 0.8
+    
+  # Risk management
+  risk:
+    var_calculation: true
+    stress_testing: false
+    scenario_analysis: false

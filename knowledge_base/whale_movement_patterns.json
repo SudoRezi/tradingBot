@@ -1,0 +1,53 @@
+{
+  "wallet_analysis": {
+    "whale_thresholds": {
+      "BTC": "100+ BTC",
+      "ETH": "1000+ ETH",
+      "other_crypto": "1% of circulating supply"
+    },
+    "movement_signals": {
+      "exchange_inflow": {
+        "signal": "Potential sell pressure",
+        "timeframe": "24-72 hours",
+        "accuracy": 0.68,
+        "volume_threshold": "500+ BTC equivalent"
+      },
+      "exchange_outflow": {
+        "signal": "Accumulation/HODLing",
+        "bullish_indicator": "Strong",
+        "historical_correlation": 0.74
+      },
+      "wallet_consolidation": {
+        "signal": "Preparation for major move",
+        "accuracy": 0.62,
+        "follow_up_timeframe": "1-2 weeks"
+      }
+    }
+  },
+  "institutional_patterns": {
+    "grayscale_flows": {
+      "premium_discount": "Institutional sentiment indicator",
+      "inflow_correlation": 0.71,
+      "leading_indicator": "1-2 weeks ahead of spot"
+    },
+    "etf_flows": {
+      "correlation_with_price": 0.83,
+      "volume_significance": "Above $100M daily"
+    },
+    "corporate_treasury": {
+      "announcement_impact": "+5% to +15%",
+      "sustainability": "Medium-term bullish"
+    }
+  },
+  "miner_behavior": {
+    "selling_pressure": {
+      "hash_rate_correlation": -0.45,
+      "capitulation_signals": "Hash rate drop >20%",
+      "bottom_indicator": "Miner selling exhaustion"
+    },
+    "accumulation_phase": {
+      "low_selling": "Bullish confluence",
+      "hash_rate_growth": "Network strength indicator"
+    }
+  }
+}

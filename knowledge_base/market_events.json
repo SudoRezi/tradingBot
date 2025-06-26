@@ -1,0 +1,45 @@
+{
+  "federal_reserve": {
+    "interest_rate_hike": {
+      "typical_reaction": "Negative short-term, recovery in 2-7 days",
+      "magnitude": "-5% to -15%",
+      "duration": "3-5 days average",
+      "opportunity": "Buy the dip if fundamentals strong"
+    },
+    "dovish_speech": {
+      "reaction": "Immediate pump +3% to +8%",
+      "sustainability": "Depends on follow-through"
+    }
+  },
+  "crypto_specific": {
+    "exchange_hacks": {
+      "immediate_reaction": "-10% to -25%",
+      "recovery_time": "1-4 weeks",
+      "contagion": "Exchange tokens hit hardest"
+    },
+    "regulation_news": {
+      "positive": "+15% to +30% pump",
+      "negative": "-20% to -40% dump",
+      "fade_time": "News usually fades in 3-7 days"
+    },
+    "halving_events": {
+      "btc_halving": {
+        "pre_halving": "Usually pumps 6 months before",
+        "post_halving": "Sideways 6-12 months, then bull run",
+        "historical_pattern": "Very reliable"
+      }
+    }
+  },
+  "technical_events": {
+    "death_cross": {
+      "description": "50MA crosses below 200MA",
+      "reliability": 0.72,
+      "false_signals": "Common in ranging markets"
+    },
+    "golden_cross": {
+      "description": "50MA crosses above 200MA",
+      "reliability": 0.68,
+      "follow_through": "Usually needs volume confirmation"
+    }
+  }
+}

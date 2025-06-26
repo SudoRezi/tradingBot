@@ -1,0 +1,50 @@
+{
+  "trading_patterns": {
+    "execution_algorithms": {
+      "TWAP": {
+        "identification": "Consistent volume over time",
+        "duration": "Hours to days",
+        "market_impact": "Minimal per trade"
+      },
+      "VWAP": {
+        "identification": "Volume-weighted execution",
+        "benchmark": "Daily VWAP price",
+        "institutional_favorite": "Most common"
+      },
+      "iceberg_orders": {
+        "identification": "Repeated same-size orders",
+        "hidden_size": "Usually 10x visible",
+        "direction_indicator": "Follow the iceberg"
+      }
+    }
+  },
+  "calendar_effects": {
+    "month_end_rebalancing": {
+      "timing": "Last 2-3 trading days",
+      "impact": "Increased volume and volatility",
+      "opportunity": "Momentum trades"
+    },
+    "quarter_end": {
+      "window_dressing": "Performance chasing",
+      "crypto_impact": "Usually positive",
+      "duration": "1-2 weeks"
+    },
+    "options_expiry": {
+      "max_pain_theory": "Price gravitates to max pain",
+      "gamma_squeeze": "Large moves possible",
+      "timing": "Third Friday monthly"
+    }
+  },
+  "flow_indicators": {
+    "grayscale_premium": {
+      "institutional_sentiment": "Premium = bullish",
+      "discount_threshold": "-20% significant",
+      "lead_time": "1-2 weeks"
+    },
+    "exchange_flows": {
+      "institutional_exchanges": "Coinbase, Kraken",
+      "retail_exchanges": "Binance, smaller exchanges",
+      "flow_direction": "Institutional follows retail"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+2025-06-26 09:53:37,734 - smart_performance_optimizer - INFO - 🚀 Smart Performance Mode attivato
+2025-06-26 09:53:37,740 - smart_performance_optimizer - INFO - ✅ Garbage collection ottimizzato
+2025-06-26 09:53:37,744 - smart_performance_optimizer - WARNING - Priorità thread non modificabile: [Errno 1] Operation not permitted
+2025-06-26 09:53:37,756 - smart_performance_optimizer - INFO - ✅ Memory pools pre-allocati
+2025-06-26 09:53:37,757 - smart_performance_optimizer - INFO - 📉 ui_refresh_rate: 2.0s
+2025-06-26 09:53:37,758 - smart_performance_optimizer - INFO - 📉 chart_update_rate: 5.0s
+2025-06-26 09:53:37,759 - smart_performance_optimizer - INFO - 📉 log_flush_rate: 10.0s
+2025-06-26 09:53:37,759 - smart_performance_optimizer - INFO - 📉 backup_frequency: 300.0s
+2025-06-26 09:53:37,759 - smart_performance_optimizer - INFO - 📉 diagnostics_rate: 30.0s
+2025-06-26 09:53:37,760 - smart_performance_optimizer - INFO - ✅ Smart caching abilitato
+2025-06-26 09:53:37,762 - smart_performance_optimizer - INFO - 🔄 Ottimizzazione continua avviata
+2025-06-26 10:05:02,384 - smart_performance_optimizer - INFO - 🚀 Smart Performance Mode attivato
+2025-06-26 10:05:02,424 - smart_performance_optimizer - INFO - ✅ Garbage collection ottimizzato
+2025-06-26 10:05:02,425 - smart_performance_optimizer - WARNING - Priorità thread non modificabile: [Errno 1] Operation not permitted
+2025-06-26 10:05:02,448 - smart_performance_optimizer - INFO - ✅ Memory pools pre-allocati
+2025-06-26 10:05:02,448 - smart_performance_optimizer - INFO - 📉 ui_refresh_rate: 2.0s
+2025-06-26 10:05:02,448 - smart_performance_optimizer - INFO - 📉 chart_update_rate: 5.0s
+2025-06-26 10:05:02,449 - smart_performance_optimizer - INFO - 📉 log_flush_rate: 10.0s
+2025-06-26 10:05:02,449 - smart_performance_optimizer - INFO - 📉 backup_frequency: 300.0s
+2025-06-26 10:05:02,450 - smart_performance_optimizer - INFO - 📉 diagnostics_rate: 30.0s
+2025-06-26 10:05:02,450 - smart_performance_optimizer - INFO - ✅ Smart caching abilitato
+2025-06-26 10:05:02,451 - smart_performance_optimizer - INFO - 🔄 Ottimizzazione continua avviata
+2025-06-26 10:13:25,150 - smart_performance_optimizer - INFO - 🚀 Smart Performance Mode attivato
+2025-06-26 10:13:25,154 - smart_performance_optimizer - INFO - ✅ Garbage collection ottimizzato
+2025-06-26 10:13:25,155 - smart_performance_optimizer - WARNING - Priorità thread non modificabile: [Errno 1] Operation not permitted
+2025-06-26 10:13:25,171 - smart_performance_optimizer - INFO - ✅ Memory pools pre-allocati
+2025-06-26 10:13:25,172 - smart_performance_optimizer - INFO - 📉 ui_refresh_rate: 2.0s
+2025-06-26 10:13:25,172 - smart_performance_optimizer - INFO - 📉 chart_update_rate: 5.0s
+2025-06-26 10:13:25,173 - smart_performance_optimizer - INFO - 📉 log_flush_rate: 10.0s
+2025-06-26 10:13:25,173 - smart_performance_optimizer - INFO - 📉 backup_frequency: 300.0s
+2025-06-26 10:13:25,174 - smart_performance_optimizer - INFO - 📉 diagnostics_rate: 30.0s
+2025-06-26 10:13:25,174 - smart_performance_optimizer - INFO - ✅ Smart caching abilitato
+2025-06-26 10:13:25,177 - smart_performance_optimizer - INFO - 🔄 Ottimizzazione continua avviata
+2025-06-26 12:15:50,336 - advanced_order_system - INFO - Order submitted: ORD_ED93D518 - BTC/USD buy 0.001
+2025-06-26 12:15:50,386 - advanced_order_system - INFO - Order cancelled: ORD_ED93D518

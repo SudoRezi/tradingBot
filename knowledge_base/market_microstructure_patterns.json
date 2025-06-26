@@ -1,0 +1,39 @@
+{
+  "order_flow_patterns": {
+    "price_discovery": {
+      "lead_lag_relationships": "Binance leads price discovery",
+      "arbitrage_opportunities": "Cross-exchange delays",
+      "information_flow": "News impacts largest exchanges first"
+    },
+    "market_impact": {
+      "temporary_impact": "Reverts within minutes",
+      "permanent_impact": "Information-driven",
+      "size_thresholds": "1% of ADV significant"
+    }
+  },
+  "liquidity_patterns": {
+    "time_of_day": {
+      "asian_session": "Lower liquidity",
+      "european_session": "Moderate liquidity",
+      "us_session": "Highest liquidity",
+      "weekend_effect": "Significantly reduced"
+    },
+    "volatility_clustering": {
+      "high_vol_persistence": "Volatility begets volatility",
+      "calm_periods": "Low vol can persist",
+      "regime_changes": "Sudden shifts possible"
+    }
+  },
+  "execution_quality": {
+    "slippage_analysis": {
+      "market_orders": "Immediate but costly",
+      "limit_orders": "Better price, execution risk",
+      "optimal_sizing": "Minimize market impact"
+    },
+    "timing_strategies": {
+      "VWAP_beats": "Execute better than VWAP",
+      "implementation_shortfall": "Total cost minimization",
+      "arrival_price": "Minimize timing risk"
+    }
+  }
+}

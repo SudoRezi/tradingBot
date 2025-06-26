@@ -1,0 +1,46 @@
+{
+  "protocol_fundamentals": {
+    "TVL_analysis": {
+      "growth_correlation": 0.82,
+      "token_price_correlation": 0.71,
+      "sustainability_metrics": "Real yield vs token emissions",
+      "risk_factors": "Smart contract risk, impermanent loss"
+    },
+    "yield_farming": {
+      "APY_sustainability": {
+        "realistic_yields": "5-20% for stable protocols",
+        "ponzi_indicators": "100%+ APY unsustainable",
+        "token_emission_dependency": "Risk factor"
+      },
+      "impermanent_loss": {
+        "calculation": "Volatility dependent",
+        "mitigation": "Correlated asset pairs",
+        "break_even": "Yield must exceed IL"
+      }
+    }
+  },
+  "defi_trends": {
+    "protocol_wars": {
+      "vampire_attacks": "Temporary price pumps",
+      "fork_strategies": "Original usually wins long-term",
+      "liquidity_mining": "Mercenary capital issues"
+    },
+    "cross_chain": {
+      "bridge_risks": "Smart contract vulnerabilities",
+      "multi_chain_opportunities": "Arbitrage across chains",
+      "layer2_adoption": "Scaling solution necessity"
+    }
+  },
+  "risk_management": {
+    "smart_contract_risk": {
+      "audit_importance": "Multiple audits required",
+      "time_tested": "Longer = safer generally",
+      "bug_bounties": "Security indicator"
+    },
+    "liquidity_risk": {
+      "exit_liquidity": "Can you sell your position?",
+      "slippage_analysis": "Large order impact",
+      "pool_concentration": "Whale domination risk"
+    }
+  }
+}

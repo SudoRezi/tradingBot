@@ -1,0 +1,68 @@
+{
+  "federal_reserve": {
+    "interest_rates": {
+      "crypto_correlation": -0.65,
+      "lag_time": "1-7 days",
+      "magnitude": "100bp = 10-25% crypto impact",
+      "dovish_signals": [
+        "lower for longer",
+        "data dependent",
+        "gradual approach"
+      ],
+      "hawkish_signals": [
+        "restrictive",
+        "aggressive",
+        "front-loaded"
+      ]
+    },
+    "money_supply": {
+      "M2_correlation": 0.78,
+      "QE_impact": "Highly bullish for crypto",
+      "QT_impact": "Bearish pressure",
+      "balance_sheet_size": "Key metric to watch"
+    },
+    "inflation_data": {
+      "CPI_correlation": 0.23,
+      "narrative_dependent": "Hedge vs risk-off",
+      "core_vs_headline": "Core more important",
+      "expectations": "Often more important than actual"
+    }
+  },
+  "dollar_strength": {
+    "DXY_correlation": -0.58,
+    "euro_correlation": 0.42,
+    "yen_correlation": 0.31,
+    "emerging_markets": "Strong positive correlation"
+  },
+  "traditional_markets": {
+    "stock_correlation": {
+      "SPY": 0.67,
+      "NASDAQ": 0.73,
+      "growth_stocks": 0.81,
+      "risk_on_behavior": "Crypto follows tech stocks"
+    },
+    "bond_yields": {
+      "10_year": -0.44,
+      "2_year": -0.51,
+      "yield_curve": "Inversion = risk-off for crypto"
+    },
+    "commodities": {
+      "gold": 0.34,
+      "oil": 0.28,
+      "copper": 0.41,
+      "risk_sentiment": "Crypto follows risk assets"
+    }
+  },
+  "global_events": {
+    "geopolitical_risk": {
+      "safe_haven_demand": "Limited for crypto",
+      "risk_off_selling": "More common reaction",
+      "ukraine_russia": "Initial spike, then normalization"
+    },
+    "china_policy": {
+      "crypto_bans": "Temporary 20-40% drops",
+      "recovery_time": "3-6 months typical",
+      "mining_bans": "Hash rate redistribution"
+    }
+  }
+}

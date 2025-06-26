@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "encryption_standard": "AES-256-GCM",
+  "key_derivation": "PBKDF2-SHA512",
+  "iterations": 100000,
+  "created_at": "2025-06-26T06:14:07.997423"
+}

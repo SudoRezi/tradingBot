@@ -1,0 +1,38 @@
+{
+  "liquidity_metrics": {
+    "bid_ask_spread": {
+      "tight_spreads": "High liquidity",
+      "wide_spreads": "Low liquidity",
+      "relative_spread": "Normalized by price"
+    },
+    "market_depth": {
+      "order_book_depth": "Volume at price levels",
+      "depth_imbalance": "Directional bias",
+      "resilience": "Speed of depth replenishment"
+    }
+  },
+  "liquidity_risk": {
+    "flash_crash_conditions": {
+      "triggers": "Large order + thin book",
+      "recovery_mechanisms": "Arbitrageurs step in",
+      "duration": "Minutes to hours"
+    },
+    "market_stress": {
+      "correlation_spike": "Liquidity evaporates",
+      "flight_to_quality": "BTC benefits most",
+      "altcoin_underperformance": "Liquidity premium"
+    }
+  },
+  "optimal_execution": {
+    "trade_scheduling": {
+      "volume_participation": "10-20% of volume",
+      "time_distribution": "Spread over time",
+      "market_timing": "Avoid news/events"
+    },
+    "algorithm_selection": {
+      "TWAP": "Consistent execution",
+      "VWAP": "Benchmark beating",
+      "Implementation_Shortfall": "Cost minimization"
+    }
+  }
+}

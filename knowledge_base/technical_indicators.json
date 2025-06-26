@@ -1,0 +1,59 @@
+{
+  "trend_following": {
+    "ema_cross": {
+      "fast_period": 12,
+      "slow_period": 26,
+      "signal_period": 9,
+      "crypto_optimized": true,
+      "success_rate": 0.64,
+      "best_timeframes": [
+        "4h",
+        "1d"
+      ],
+      "notes": "Ottimizzato per volatilit\u00e0 crypto"
+    },
+    "macd": {
+      "fast": 12,
+      "slow": 26,
+      "signal": 9,
+      "crypto_adjustment": "Ridotti del 20% per volatilit\u00e0",
+      "divergence_reliability": 0.73
+    },
+    "bollinger_bands": {
+      "period": 20,
+      "std_dev": 2.0,
+      "crypto_note": "Bande pi\u00f9 larghe per crypto volatility",
+      "squeeze_strategy": "High probability breakout"
+    }
+  },
+  "momentum": {
+    "rsi": {
+      "period": 14,
+      "overbought": 70,
+      "oversold": 30,
+      "crypto_levels": {
+        "extreme_overbought": 80,
+        "extreme_oversold": 20
+      },
+      "divergence_power": "high"
+    },
+    "stoch_rsi": {
+      "period": 14,
+      "k_period": 3,
+      "d_period": 3,
+      "crypto_optimized": true,
+      "scalping_friendly": true
+    }
+  },
+  "volume": {
+    "volume_profile": {
+      "importance": "Critical for crypto",
+      "poc_trading": "Point of Control strategy",
+      "high_volume_nodes": "Strong support/resistance"
+    },
+    "on_balance_volume": {
+      "divergence_reliability": 0.68,
+      "trend_confirmation": "Essential"
+    }
+  }
+}

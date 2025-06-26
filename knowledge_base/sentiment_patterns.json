@@ -1,0 +1,76 @@
+{
+  "bullish_keywords": {
+    "strong_bullish": [
+      "moon",
+      "rocket",
+      "lambo",
+      "to the moon",
+      "bullish AF",
+      "diamond hands",
+      "HODL",
+      "buying the dip",
+      "accumulating"
+    ],
+    "moderate_bullish": [
+      "bullish",
+      "pump",
+      "green",
+      "up",
+      "buy",
+      "long",
+      "support",
+      "breakout",
+      "rally"
+    ],
+    "institutional_bullish": [
+      "adoption",
+      "institutional",
+      "corporate treasury",
+      "ETF approval",
+      "regulation clarity",
+      "mass adoption"
+    ]
+  },
+  "bearish_keywords": {
+    "strong_bearish": [
+      "dump",
+      "crash",
+      "rekt",
+      "liquidated",
+      "dead cat bounce",
+      "bear trap",
+      "capitulation",
+      "panic selling"
+    ],
+    "moderate_bearish": [
+      "bearish",
+      "red",
+      "down",
+      "sell",
+      "short",
+      "resistance",
+      "rejection",
+      "correction"
+    ],
+    "fear_indicators": [
+      "regulation ban",
+      "hack",
+      "scam",
+      "ponzi",
+      "bubble",
+      "overvalued",
+      "crash incoming"
+    ]
+  },
+  "sentiment_scores": {
+    "extreme_fear": "Usually bottom signal (buy opportunity)",
+    "extreme_greed": "Usually top signal (sell opportunity)",
+    "neutral": "Low conviction, wait for catalyst",
+    "contrarian_strategy": "Fade extreme sentiment"
+  },
+  "social_volume": {
+    "spike_interpretation": "High volume + positive = momentum",
+    "low_volume": "Lack of interest, accumulation phase",
+    "negative_volume_spike": "Panic, potential bottom"
+  }
+}

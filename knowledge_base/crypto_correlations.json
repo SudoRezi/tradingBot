@@ -1,0 +1,45 @@
+{
+  "major_pairs": {
+    "BTC_dominance_effect": {
+      "description": "Quando BTC sale, altcoin spesso scendono",
+      "correlation": -0.65,
+      "strength": "strong",
+      "trading_implication": "Hedge altcoin quando BTC pompous"
+    },
+    "ETH_ecosystem": {
+      "correlated_tokens": [
+        "UNI",
+        "AAVE",
+        "LINK"
+      ],
+      "correlation": 0.78,
+      "reasoning": "DeFi ecosystem connection"
+    },
+    "layer1_competition": {
+      "tokens": [
+        "ETH",
+        "SOL",
+        "ADA",
+        "AVAX"
+      ],
+      "inverse_correlation": "Medium during narrative shifts",
+      "correlation": 0.45
+    }
+  },
+  "market_regimes": {
+    "bull_market": {
+      "btc_alt_correlation": 0.65,
+      "risk_on_behavior": "High correlation with risk assets",
+      "momentum_persistence": "Strong"
+    },
+    "bear_market": {
+      "btc_dominance": "Increases significantly",
+      "alt_correlation": "Decreases to 0.3-0.4",
+      "flight_to_quality": "BTC and stablecoins"
+    },
+    "sideways": {
+      "correlation_breakdown": "Common",
+      "alpha_opportunities": "Individual token narratives"
+    }
+  }
+}

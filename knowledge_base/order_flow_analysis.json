@@ -1,0 +1,65 @@
+{
+  "order_book_signals": {
+    "bid_ask_imbalance": {
+      "ratio_threshold": "70/30",
+      "prediction_accuracy": 0.64,
+      "timeframe": "5-15 minutes",
+      "volume_requirement": "Significant size"
+    },
+    "large_order_detection": {
+      "iceberg_orders": {
+        "identification": "Repeated same-size orders",
+        "implication": "Institutional activity",
+        "strategy": "Follow the iceberg direction"
+      },
+      "sweep_orders": {
+        "signal": "Market taking aggression",
+        "momentum_indicator": "Strong",
+        "follow_through": "Usually 1-4 hours"
+      }
+    },
+    "support_resistance_levels": {
+      "volume_clusters": {
+        "identification": "High volume nodes",
+        "strength": "Proportional to volume",
+        "break_significance": "Volume expansion required"
+      },
+      "psychological_levels": {
+        "round_numbers": "10k, 50k, 100k for BTC",
+        "historical_significance": "Previous ATH/ATL",
+        "fibonacci_levels": "0.618, 0.786 retracements"
+      }
+    }
+  },
+  "liquidity_analysis": {
+    "market_depth": {
+      "thin_orderbook": "Increased volatility risk",
+      "thick_orderbook": "Price stability",
+      "depth_ratio": "2% market depth measurement"
+    },
+    "liquidity_crises": {
+      "flash_crash_conditions": {
+        "triggers": "Thin liquidity + large market order",
+        "recovery_time": "Usually 5-30 minutes",
+        "opportunity": "Quick reversal plays"
+      },
+      "weekend_liquidity": {
+        "reduced_depth": "30-50% less liquidity",
+        "volatility_increase": "20-40% higher",
+        "risk_adjustment": "Reduce position sizes"
+      }
+    }
+  },
+  "flow_patterns": {
+    "institutional_flow": {
+      "time_patterns": "9-11 AM, 2-4 PM EST",
+      "size_patterns": "Large, consistent orders",
+      "execution_style": "TWAP/VWAP algorithms"
+    },
+    "retail_flow": {
+      "time_patterns": "Evening/weekend peaks",
+      "behavior": "Momentum chasing",
+      "contrarian_opportunity": "Fade retail extremes"
+    }
+  }
+}

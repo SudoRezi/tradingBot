@@ -1,0 +1,81 @@
+{
+  "modalita_strategia": "ibrida",
+  "strategia_autoselezione": true,
+  "percentuale_hft": 60,
+  "percentuale_swing": 40,
+  "profit_target_asset": "USDT",
+  "btc_long_term_allocation": 15,
+  "hardware_optimization": {
+    "cpu_cores": 8,
+    "memory_limit_gb": 16,
+    "gpu_acceleration": false,
+    "multithread": true,
+    "simd_instructions": true,
+    "redis_cache": true
+  },
+  "risk_management": {
+    "max_portfolio_drawdown": 10,
+    "max_position_size": 20,
+    "max_leverage": 5,
+    "auto_throttle_drawdown": true,
+    "emergency_stop_threshold": 25
+  },
+  "ai_models": {
+    "auto_retrain": true,
+    "retrain_frequency_hours": 12,
+    "drift_detection": true,
+    "ensemble_auto_weighting": true,
+    "model_selection_strategy": "performance_based"
+  },
+  "exchanges": {
+    "supported_cex": [
+      "Binance",
+      "Bybit", 
+      "Coinbase Pro",
+      "Kraken",
+      "OKX",
+      "KuCoin",
+      "Bitget"
+    ],
+    "supported_dex": [
+      "Uniswap V3",
+      "1inch",
+      "PancakeSwap",
+      "SushiSwap"
+    ],
+    "rate_limits": {
+      "binance": 1200,
+      "bybit": 600,
+      "coinbase": 300
+    }
+  },
+  "data_feeds": {
+    "market_data": ["Kaiko", "Amberdata"],
+    "fundamental": ["Glassnode", "IntoTheBlock", "Token Terminal"],
+    "news_sentiment": ["Newsquawk", "Benzinga", "The Tie"],
+    "social": ["LunarCrush", "Twitter API", "Reddit API"],
+    "update_frequency_ms": 1000
+  },
+  "trading_modes": {
+    "paper_trading": true,
+    "live_trading": false,
+    "backtest_mode": false
+  },
+  "strategy_config": {
+    "hft": {
+      "latency_target_ms": 5,
+      "min_profit_bps": 2,
+      "max_position_duration_s": 300
+    },
+    "swing": {
+      "min_holding_hours": 4,
+      "max_holding_days": 14,
+      "trend_confirmation_periods": 3
+    },
+    "arbitrage": {
+      "min_spread_bps": 30,
+      "max_execution_time_s": 60,
+      "cross_exchange": true
+    }
+  }
+}

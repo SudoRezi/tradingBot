@@ -1,0 +1,47 @@
+🛠️ Obiettivo:
+Verifica e assicura la stabilità, l'integrità funzionale e la coerenza del sistema AI appena implementato per il trading e HFT multi-exchange. Esegui test su tutti i moduli attivi, le API, la rete, i flussi di dati, e le logiche AI.
+
+---
+
+🔍 Attività richieste:
+
+1. **Controllo integrità codice**
+   - Scansiona e verifica che non ci siano errori, eccezioni non gestite, moduli mancanti o configurazioni errate.
+   - Verifica la validità dei file di configurazione (es. `config.json`, `.env`, etc.)
+
+2. **Test connessione rete/API**
+   - Assicurati che tutte le API key siano attive e funzionanti.
+   - Esegui test per ciascun exchange abilitato: connessione, fetch saldo, coppie disponibili, test ordine (paper).
+   - Verifica la risposta dei feed di dati esterni (news, social, fondamentali).
+
+3. **Verifica moduli AI attivi**
+   - Controlla che i moduli ML siano caricati correttamente.
+   - Verifica che la selezione delle strategie funzioni (standard, HFT, ibrida).
+   - Assicurati che i modelli rispondano correttamente e restituiscano previsioni valide.
+
+4. **Validazione operazioni core**
+   - Testa in ambiente di simulazione le funzioni di:
+     - Buy/Sell
+     - Stop loss e trailing stop
+     - Conversioni tra asset
+     - Rilevamento segnali di mercato
+
+5. **Gestione errori e stabilità**
+   - Identifica e **correggi automaticamente** eventuali bug o malfunzionamenti **senza cancellare le funzionalità già esistenti**.
+   - Non modificare o rimuovere:
+     - L'interfaccia grafica
+     - Le impostazioni personalizzate
+     - Le strategie e i moduli esistenti
+
+6. **Output**
+   - Restituisci un report dettagliato con:
+     - Stato di ogni componente (OK / Warning / Errore)
+     - Eventuali errori corretti automaticamente
+     - Suggerimenti per miglioramenti futuri (opzionale)
+
+---
+
+🎯 Requisiti finali:
+- Il sistema deve risultare stabile, funzionante e pronto all’uso.
+- Le funzionalità e la struttura devono restare invariate.
+- Correggi solo ciò che è rotto, instabile o incompleto.

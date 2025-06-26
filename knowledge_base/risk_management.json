@@ -1,0 +1,50 @@
+{
+  "position_sizing": {
+    "conservative": {
+      "max_risk_per_trade": "1%",
+      "max_portfolio_risk": "5%",
+      "correlation_limit": "Max 3 correlated positions"
+    },
+    "moderate": {
+      "max_risk_per_trade": "2%",
+      "max_portfolio_risk": "10%",
+      "leverage_limit": "3x maximum"
+    },
+    "aggressive": {
+      "max_risk_per_trade": "5%",
+      "max_portfolio_risk": "20%",
+      "leverage_limit": "10x maximum",
+      "note": "Only for experienced traders"
+    }
+  },
+  "stop_loss_strategies": {
+    "technical_stops": {
+      "support_resistance": "Just below key support",
+      "moving_average": "Below key MA (20, 50, 200)",
+      "pattern_based": "Below pattern low (triangle, flag)"
+    },
+    "volatility_stops": {
+      "atr_based": "2x ATR from entry",
+      "dynamic": "Adjust with volatility changes",
+      "trailing": "Move stop as price moves favorably"
+    },
+    "time_stops": {
+      "max_hold": "Close if thesis not playing out",
+      "weekend_close": "Reduce exposure over weekends",
+      "event_based": "Close before major events"
+    }
+  },
+  "drawdown_management": {
+    "portfolio_rules": {
+      "5%_drawdown": "Review all positions",
+      "10%_drawdown": "Reduce position sizes by 50%",
+      "15%_drawdown": "Stop trading, analyze mistakes",
+      "20%_drawdown": "Emergency exit all positions"
+    },
+    "recovery_strategy": {
+      "small_positions": "Start with reduced size",
+      "high_probability": "Only highest conviction trades",
+      "psychological": "Address emotional trading"
+    }
+  }
+}

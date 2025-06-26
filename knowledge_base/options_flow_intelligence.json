@@ -1,0 +1,46 @@
+{
+  "options_metrics": {
+    "put_call_ratio": {
+      "bullish_threshold": "< 0.7",
+      "bearish_threshold": "> 1.3",
+      "extreme_readings": "Contrarian indicators",
+      "timeframe": "Daily and weekly"
+    },
+    "implied_volatility": {
+      "IV_percentile": {
+        "high_IV": "> 75th percentile",
+        "low_IV": "< 25th percentile",
+        "mean_reversion": "IV tends to revert"
+      },
+      "volatility_smile": {
+        "skew_analysis": "Put skew = fear",
+        "term_structure": "Backwardation vs contango",
+        "event_premium": "Earnings, announcements"
+      }
+    }
+  },
+  "gamma_analysis": {
+    "gamma_squeeze": {
+      "conditions": "High gamma, low liquidity",
+      "acceleration": "Price moves amplified",
+      "duration": "Usually short-term"
+    },
+    "delta_hedging": {
+      "market_maker_flow": "Systematic buying/selling",
+      "gamma_impact": "Larger near strike prices",
+      "expiry_effects": "Gamma decay"
+    }
+  },
+  "options_strategies": {
+    "large_block_trades": {
+      "significance": "> $1M notional",
+      "institutional_activity": "Smart money indicator",
+      "direction_bias": "Follow large block direction"
+    },
+    "unusual_activity": {
+      "volume_spikes": "10x normal volume",
+      "new_position_indicators": "Open interest increase",
+      "insider_activity": "Potential catalyst"
+    }
+  }
+}

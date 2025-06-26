@@ -1,0 +1,89 @@
+Sei un assistente AI sviluppatore che lavora sul mio progetto completo di AI Trading Bot creato in Python e Streamlit. Ora devi integrarlo con QuantConnect (basato su LEAN) per permettere alla mia AI di:
+
+Generare strategie compatibili con QuantConnect
+
+Eseguire backtest automatici usando QuantConnect CLI (o API se disponibile)
+
+Ricevere, leggere e analizzare i risultati
+
+Migliorare automaticamente le strategie
+
+Mostrare i risultati nella mia dashboard Streamlit esistente
+
+⚙️ Specifiche Tecniche:
+
+Sistema operativo: Windows (principale) + supporto opzionale per macOS
+
+L’app è già funzionante in locale con AI integrata e moduli multi-strategia
+
+Le strategie sono generate dinamicamente con modelli AI
+
+Le strategie vanno convertite in file .py compatibili con il framework LEAN di QuantConnect
+
+🎯 Cosa devi creare ora (moduli richiesti):
+
+quantconnect_generator.py
+→ converte la strategia AI in formato LEAN
+
+quantconnect_launcher.py
+→ invia la strategia alla CLI QuantConnect (lean backtest) e ne monitora l'esecuzione
+
+backtest_results_parser.py
+→ legge il file .json di output e restituisce le metriche utili (Sharpe, drawdown, accuracy, ecc.)
+
+streamlit_backtest_tab.py
+→ una nuova tab Streamlit nella dashboard chiamata “QuantConnect Backtesting” che mostra:
+
+lista strategie testate
+
+grafici performance
+
+download dei log
+
+tasto “ottimizza strategia”
+
+💡 Obiettivi di performance dell’integrazione:
+
+Permettere la generazione e test di almeno 3 strategie per volta
+
+Memorizzare i risultati nella mia AI memory (SQLite) per usarli nella selezione dei modelli futuri
+
+Offrire la possibilità di selezionare una strategia testata per attivarla in live trading
+
+📦 Requisiti di compatibilità:
+
+Supporto per QuantConnect Cloud (via CLI) e opzionale Local install
+
+File di output e config compatibili con LEAN 2.6+
+
+Salvataggio automatico delle strategie in strategies/ o cartella simile
+
+Nessuna modifica alla UI esistente, ma espansione modulare
+
+✅ Esegui i seguenti passi nel tuo sviluppo:
+
+Verifica che QuantConnect CLI sia installata e accessibile (lean login)
+
+Crea la struttura file/funzioni per i 4 moduli sopra
+
+Integra tutto senza rompere la logica AI esistente
+
+Commenta chiaramente le sezioni e i file per estensioni future
+
+🤖 L’AI deve essere in grado di gestire da sola:
+
+Creazione del file strategia
+
+Lanciare il test
+
+Leggere i risultati
+
+Imparare cosa ha funzionato
+
+Ottimizzare la strategia (variare parametri)
+
+Suggerire modifiche o auto-applicarle
+
+🛑 Non usare API key in chiaro
+🛡️ Usa .env o config.ini per ogni variabile di sistema
+

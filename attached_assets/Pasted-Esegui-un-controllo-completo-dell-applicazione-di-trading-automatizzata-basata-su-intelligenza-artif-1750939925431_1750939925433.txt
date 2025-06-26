@@ -1,0 +1,53 @@
+Esegui un controllo completo dell'applicazione di trading automatizzata basata su intelligenza artificiale. Verifica che tutte le componenti fondamentali siano funzionanti, stabili e correttamente integrate tra loro. L'obiettivo è confermare che l'intero sistema sia operativo end-to-end. Analizza i seguenti aspetti:
+
+🔹 1. Connessioni e Integrazioni
+Verifica che tutte le API degli exchange (es. Binance, Bybit, Coinbase, OKX) siano correttamente collegate e autorizzate
+
+Conferma che l'app sia in grado di ricevere dati in tempo reale (price feed, order book, volumi)
+
+🔹 2. Moduli AI e Strategie
+Controlla che i moduli AI siano attivi e che:
+
+Analizzino correttamente i grafici e i volumi
+
+Eseguano strategie (standard, HFT o ibride) in base alla configurazione
+
+Verifica che le decisioni dell’AI vengano tracciate e registrate nel database (AI memory)
+
+🔹 3. Trading attivo
+Verifica che il bot sia in grado di:
+
+Riconoscere segnali di acquisto e vendita
+
+Inviare ordini corretti agli exchange
+
+Applicare stop-loss, take-profit, trailing stop
+
+Controlla che i fondi dell’utente siano rilevati e gestiti correttamente
+
+🔹 4. Feed di analisi esterna
+Conferma che l’app legge e interpreta correttamente:
+
+Notizie (NewsAPI)
+
+Feed social (Twitter, Reddit)
+
+Eventuali segnali da Alpha Vantage o HuggingFace
+
+🔹 5. Interfaccia e Dashboard
+Verifica che la UI Streamlit funzioni e rifletta correttamente lo stato delle operazioni
+
+Controlla che le informazioni siano aggiornate in tempo reale e senza lag
+
+🔹 6. Sicurezza e Logging
+Verifica la protezione di API key e dati sensibili
+
+Controlla che i log di sistema siano attivi e registrino errori, avvisi e operazioni critiche
+
+🔹 7. Backup e Resilienza
+Testa la funzione di backup/ripristino della mente AI e delle impostazioni strategiche
+
+Simula eventuali crash o errori per valutare la stabilità
+
+🎯 Obiettivo
+Se vengono trovati malfunzionamenti o errori, suggerisci correzioni senza alterare l’interfaccia o la struttura logica generale dell’app. L’obiettivo è la correzione mirata, non la riscrittura.

@@ -1,0 +1,89 @@
+{
+  "platform_analysis": {
+    "twitter_crypto": {
+      "influence_metrics": {
+        "follower_count": "Reach indicator",
+        "engagement_rate": "Influence quality",
+        "retweet_velocity": "Viral potential"
+      },
+      "sentiment_indicators": {
+        "hashtag_trending": "#Bitcoin trending = attention",
+        "emoji_analysis": "\ud83d\ude80 = bullish, \ud83d\udc8e = hold, \ud83d\udc3b = bearish",
+        "keyword_frequency": "FOMO, FUD, HODL patterns"
+      },
+      "key_accounts": {
+        "whale_accounts": "Large holder influence",
+        "analyst_accounts": "Technical analysis",
+        "institutional_accounts": "Corporate sentiment"
+      }
+    },
+    "reddit_analysis": {
+      "subreddit_sentiment": {
+        "r/cryptocurrency": "General crypto sentiment",
+        "r/bitcoin": "Bitcoin maximalist view",
+        "r/ethtrader": "Ethereum ecosystem"
+      },
+      "post_metrics": {
+        "upvote_ratio": "Community agreement",
+        "comment_sentiment": "Deeper opinion analysis",
+        "post_frequency": "Activity level indicator"
+      }
+    },
+    "telegram_groups": {
+      "pump_groups": "Coordinated activity detection",
+      "trading_signals": "Signal quality analysis",
+      "insider_info": "Leaked information detection"
+    }
+  },
+  "sentiment_scoring": {
+    "fear_greed_index": {
+      "extreme_fear": "0-25 = buying opportunity",
+      "extreme_greed": "75-100 = selling signal",
+      "contrarian_strategy": "Fade extreme readings"
+    },
+    "social_volume": {
+      "volume_spikes": "Attention = price movement",
+      "sustained_volume": "Trend confirmation",
+      "volume_divergence": "Trend weakness"
+    }
+  },
+  "news_sentiment": {
+    "headline_analysis": {
+      "positive_keywords": [
+        "adoption",
+        "integration",
+        "partnership"
+      ],
+      "negative_keywords": [
+        "hack",
+        "ban",
+        "regulation"
+      ],
+      "neutral_keywords": [
+        "analysis",
+        "forecast",
+        "technical"
+      ]
+    },
+    "source_credibility": {
+      "tier_1_sources": [
+        "Bloomberg",
+        "Reuters",
+        "WSJ"
+      ],
+      "tier_2_sources": [
+        "CoinDesk",
+        "CoinTelegraph"
+      ],
+      "tier_3_sources": [
+        "Social media",
+        "Blogs"
+      ]
+    },
+    "timing_impact": {
+      "immediate_reaction": "0-30 minutes",
+      "sustained_impact": "News quality dependent",
+      "fade_time": "Usually 24-72 hours"
+    }
+  }
+}

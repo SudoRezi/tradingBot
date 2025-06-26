@@ -1,0 +1,42 @@
+{
+  "crypto_traditional": {
+    "regime_dependent": {
+      "risk_on": "High correlation with stocks",
+      "risk_off": "Correlation breaks down",
+      "crisis": "Everything correlates to 1"
+    },
+    "time_varying": {
+      "daily_correlation": "More volatile",
+      "weekly_correlation": "More stable",
+      "monthly_correlation": "Structural trends"
+    }
+  },
+  "sector_rotations": {
+    "growth_to_value": {
+      "crypto_impact": "Usually negative",
+      "duration": "Months to quarters",
+      "indicators": "Rising yields, hawkish Fed"
+    },
+    "tech_outperformance": {
+      "crypto_correlation": 0.85,
+      "names_to_watch": [
+        "AAPL",
+        "GOOGL",
+        "MSFT"
+      ],
+      "leading_indicator": "Tech leads crypto"
+    }
+  },
+  "currency_correlations": {
+    "emerging_markets": {
+      "correlation": 0.67,
+      "risk_sentiment": "Crypto follows EM",
+      "dollar_strength": "Inverse correlation"
+    },
+    "carry_trades": {
+      "yen_weakness": "Risk-on for crypto",
+      "swiss_franc": "Safe haven competitor",
+      "commodity_currencies": "Positive correlation"
+    }
+  }
+}

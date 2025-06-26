@@ -1,0 +1,74 @@
+Crea tre file eseguibili di installazione automatica per l’applicazione AI Crypto Trading Bot, compatibili con i seguenti sistemi:
+
+tradingbot-installer-windows.exe → per Windows 10/11 x64
+
+tradingbot-installer-macos.pkg → per macOS Intel (x64) e Apple Silicon (ARM/M1/M2/M3)
+
+tradingbot-installer-linux.sh → per Linux Ubuntu/Debian x64
+
+⚙️ Ogni installer deve:
+Installare automaticamente tutte le dipendenze di sistema e Python, comprese librerie per il trading, Streamlit, HuggingFace, QuantConnect, ecc.
+
+Installare l’intera app AI di trading in una directory dedicata (~/ai-trading-bot)
+
+✅ Gestire i file .env e config.yaml in modo sicuro e intelligente:
+
+Se i file esistono: non sovrascriverli
+
+Se mancano parametri essenziali: inserirli automaticamente senza modificare la logica attuale
+
+Se è necessaria una modifica (per compatibilità del sistema operativo o architettura): adattare solo i parametri minimi (es. path, encoding, host, modelli CPU/ARM/x64)
+
+Se il sistema è macOS con chip M1/M2/M3, ottimizzare dipendenze e modelli AI compatibili
+
+Creare shortcut desktop o alias CLI (tradingbot) per avviare il sistema
+
+Eseguire test post-installazione:
+
+Check API e modelli AI
+
+Test caricamento configurazione
+
+Output log funzionamento AI trader
+
+🌍 Guida integrata per uso remoto via browser
+Se l’app viene installata su un server remoto Linux, crea una guida markdown/pdf che spieghi:
+
+Come accedere via SSH
+
+Come avviare l’app in modalità headless (streamlit run ...)
+
+Come accedere alla dashboard da browser:
+
+tramite http://IP:8501 (se la porta è aperta)
+
+oppure usare Ngrok / LocalTunnel / Cloudflare Tunnel
+
+Come usare strumenti tipo tmux, screen o nohup per mantenere l’app attiva
+
+Come aggiornare modelli AI o riavviare il servizio
+
+🔁 Architettura & Compatibilità
+Rileva e adatta il setup in base a:
+
+Windows (x64)
+
+Linux (x64)
+
+macOS (Intel x64 + Apple ARM/M1/M2)
+
+Se possibile, scegli e installa automaticamente la versione più efficiente del modello AI in base alla CPU
+
+📦 Output atteso:
+3 file installer eseguibili (.exe, .pkg, .sh)
+
+1 guida per uso remoto e aggiornamenti
+
+1 cartella config con:
+
+Template .env
+
+Template config.yaml
+
+Script diagnostico check_install.py o healthcheck.sh
+

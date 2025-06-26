@@ -1,0 +1,202 @@
+{
+  "export_time": "2025-06-23T23:00:34.582951",
+  "system_health": {
+    "timestamp": "2025-06-23T23:00:34.582156",
+    "cpu_usage": 45.1,
+    "memory_usage": 59.9,
+    "memory_available_gb": 25.185340881347656,
+    "disk_usage": 49.80477481486785,
+    "disk_free_gb": 22.585853576660156,
+    "process_count": 6,
+    "network_bytes_sent": 46699580,
+    "network_bytes_recv": 267067862,
+    "uptime_hours": 0.060559509166666664
+  },
+  "trading_stats": {
+    "total_trades": 0,
+    "successful_trades": 0,
+    "failed_trades": 0,
+    "consecutive_failures": 0,
+    "total_volume": 0.0,
+    "total_profit_loss": 0.0,
+    "api_calls": 0,
+    "api_errors": 0,
+    "last_trade_time": null,
+    "uptime_seconds": 218.014233
+  },
+  "recent_alerts": [
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: .encryption_key",
+      "timestamp": "2025-06-23T22:56:26.568875"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: config/settings.py",
+      "timestamp": "2025-06-23T22:56:26.568888"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: utils/encryption.py",
+      "timestamp": "2025-06-23T22:56:26.568895"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: .encryption_key",
+      "timestamp": "2025-06-23T22:56:57.570430"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: config/settings.py",
+      "timestamp": "2025-06-23T22:56:57.570443"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: utils/encryption.py",
+      "timestamp": "2025-06-23T22:56:57.570453"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: .encryption_key",
+      "timestamp": "2025-06-23T22:57:28.572165"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: config/settings.py",
+      "timestamp": "2025-06-23T22:57:28.572177"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: utils/encryption.py",
+      "timestamp": "2025-06-23T22:57:28.572188"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: .encryption_key",
+      "timestamp": "2025-06-23T22:57:59.573662"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: config/settings.py",
+      "timestamp": "2025-06-23T22:57:59.573670"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: utils/encryption.py",
+      "timestamp": "2025-06-23T22:57:59.573676"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: .encryption_key",
+      "timestamp": "2025-06-23T22:58:30.574889"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: config/settings.py",
+      "timestamp": "2025-06-23T22:58:30.574901"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: utils/encryption.py",
+      "timestamp": "2025-06-23T22:58:30.574911"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: .encryption_key",
+      "timestamp": "2025-06-23T22:59:01.576444"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: config/settings.py",
+      "timestamp": "2025-06-23T22:59:01.576452"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: utils/encryption.py",
+      "timestamp": "2025-06-23T22:59:01.576458"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: .encryption_key",
+      "timestamp": "2025-06-23T22:59:32.577869"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: config/settings.py",
+      "timestamp": "2025-06-23T22:59:32.577879"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: utils/encryption.py",
+      "timestamp": "2025-06-23T22:59:32.577889"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: .encryption_key",
+      "timestamp": "2025-06-23T23:00:03.579513"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: config/settings.py",
+      "timestamp": "2025-06-23T23:00:03.579521"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: utils/encryption.py",
+      "timestamp": "2025-06-23T23:00:03.579527"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: .encryption_key",
+      "timestamp": "2025-06-23T23:00:34.582188"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: config/settings.py",
+      "timestamp": "2025-06-23T23:00:34.582198"
+    },
+    {
+      "type": "SECURITY_ALERT",
+      "level": "HIGH",
+      "message": "Permessi file critici non sicuri: utils/encryption.py",
+      "timestamp": "2025-06-23T23:00:34.582209"
+    }
+  ],
+  "performance_summary": {
+    "period_hours": 24,
+    "data_points": 9,
+    "avg_cpu_usage": 47.49,
+    "avg_memory_usage": 59.89,
+    "total_trades": 0,
+    "success_rate_percent": 0,
+    "total_profit_loss": 0.0,
+    "uptime_hours": 0.06,
+    "alert_count": 27
+  }
+}

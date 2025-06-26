@@ -1,0 +1,201 @@
+2025-06-23 22:07:38,153 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:07:38,226 - autonomous_wallet - INFO -   📊 DOGE: 565.83688569 (≈ $90.53 USD)
+2025-06-23 22:07:38,299 - autonomous_wallet - INFO -   📊 MATIC: 57.46573774 (≈ $10.21 USD)
+2025-06-23 22:07:38,334 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:07:38,335 - autonomous_wallet - INFO -   📊 USDT: 750.43947488 (≈ $750.44 USD)
+2025-06-23 22:07:38,371 - autonomous_wallet - INFO -   📊 ADA: 237.41245138 (≈ $134.21 USD)
+2025-06-23 22:07:38,427 - autonomous_wallet - INFO -   📊 SOL: 22.47399919 (≈ $3,196.93 USD)
+2025-06-23 22:07:38,429 - autonomous_wallet - INFO -   📊 SHIB: 2,198,684.08673094 (≈ $24.93 USD)
+2025-06-23 22:07:38,431 - autonomous_wallet - INFO - ✅ Detected 4 currencies with total value $259.88
+2025-06-23 22:07:38,652 - autonomous_wallet - INFO - ✅ Detected 2 currencies with total value $3,947.37
+2025-06-23 22:13:50,845 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:13:50,846 - autonomous_wallet - INFO -   📊 USDT: 502.34079181 (≈ $502.34 USD)
+2025-06-23 22:13:50,975 - autonomous_wallet - INFO -   📊 MATIC: 65.55310311 (≈ $11.83 USD)
+2025-06-23 22:13:51,091 - autonomous_wallet - INFO -   📊 AAVE: 1.58911270 (≈ $399.55 USD)
+2025-06-23 22:13:51,171 - autonomous_wallet - INFO -   📊 BNB: 0.88861962 (≈ $564.95 USD)
+2025-06-23 22:13:51,262 - autonomous_wallet - INFO -   📊 DOT: 12.46010092 (≈ $41.99 USD)
+2025-06-23 22:13:51,264 - autonomous_wallet - INFO - ✅ Detected 5 currencies with total value $1,520.66
+2025-06-23 22:14:42,092 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:14:42,093 - autonomous_wallet - INFO -   📊 USDT: 1,115.16475704 (≈ $1,115.16 USD)
+2025-06-23 22:14:42,386 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $1,115.16
+2025-06-23 22:14:50,466 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:14:50,586 - autonomous_wallet - INFO -   📊 BNB: 0.28377786 (≈ $180.47 USD)
+2025-06-23 22:14:50,688 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $180.47
+2025-06-23 22:14:57,547 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:14:57,718 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:14:58,034 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:14:58,035 - autonomous_wallet - INFO -   📊 USDT: 287.05309248 (≈ $287.05 USD)
+2025-06-23 22:14:58,339 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:14:58,388 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $287.05
+2025-06-23 22:14:58,549 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:14:58,590 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:14:58,740 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:14:58,926 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:14:58,979 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:14:59,103 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:14:59,104 - autonomous_wallet - INFO -   📊 USDT: 188.64807573 (≈ $188.65 USD)
+2025-06-23 22:14:59,111 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:14:59,308 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:14:59,594 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $188.65
+2025-06-23 22:15:05,852 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:15:05,852 - autonomous_wallet - INFO -   📊 USDT: 231.84125395 (≈ $231.84 USD)
+2025-06-23 22:15:06,254 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $231.84
+2025-06-23 22:15:20,754 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:15:20,755 - autonomous_wallet - INFO -   📊 USDT: 536.81556924 (≈ $536.82 USD)
+2025-06-23 22:15:21,095 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $536.82
+2025-06-23 22:19:22,243 - stress_test - INFO - 🚀 Avvio Stress Test Completo Sistema AI Trading Bot
+2025-06-23 22:19:22,244 - stress_test - INFO - Eseguendo: test_autonomous_wallet_detection
+2025-06-23 22:19:22,593 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:22,594 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:22,596 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:22,598 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:22,599 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:22,605 - autonomous_wallet - INFO -   📊 USDT: 1,035.05023872 (≈ $1,035.05 USD)
+2025-06-23 22:19:22,697 - autonomous_wallet - INFO -   📊 PEPE: 828,471.46468289 (≈ $8.14 USD)
+2025-06-23 22:19:22,699 - autonomous_wallet - INFO -   📊 ETH: 1.99383994 (≈ $4,784.02 USD)
+2025-06-23 22:19:22,702 - autonomous_wallet - INFO -   📊 DOGE: 31.01307920 (≈ $5.03 USD)
+2025-06-23 22:19:22,711 - autonomous_wallet - INFO -   📊 BTC: 0.14428155 (≈ $15,195.59 USD)
+2025-06-23 22:19:22,716 - autonomous_wallet - INFO -   📊 SOL: 31.02602085 (≈ $4,487.91 USD)
+2025-06-23 22:19:23,025 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $4,784.02
+2025-06-23 22:19:23,060 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $8.14
+2025-06-23 22:19:23,072 - autonomous_wallet - INFO - ✅ Detected 2 currencies with total value $16,230.64
+2025-06-23 22:19:23,103 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $4,487.91
+2025-06-23 22:19:23,142 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $5.03
+2025-06-23 22:19:23,149 - stress_test - INFO - ✅ test_autonomous_wallet_detection: PASSED
+2025-06-23 22:19:23,150 - stress_test - INFO - Eseguendo: test_system_monitor_performance
+2025-06-23 22:19:23,190 - system_monitor - INFO - 🔍 Sistema di monitoraggio avviato
+2025-06-23 22:19:29,259 - system_monitor - INFO - 🛑 Sistema di monitoraggio fermato
+2025-06-23 22:19:29,260 - stress_test - INFO - ✅ test_system_monitor_performance: PASSED
+2025-06-23 22:19:29,260 - stress_test - INFO - Eseguendo: test_multi_exchange_simulation
+2025-06-23 22:19:29,262 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:29,263 - autonomous_wallet - INFO - 🔍 Scanning all balances on KuCoin
+2025-06-23 22:19:29,267 - autonomous_wallet - INFO - 🔍 Scanning all balances on Kraken
+2025-06-23 22:19:29,269 - autonomous_wallet - INFO - 🔍 Scanning all balances on Coinbase
+2025-06-23 22:19:29,443 - autonomous_wallet - INFO -   📊 BTC: 0.11218752 (≈ $11,815.48 USD)
+2025-06-23 22:19:29,471 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:29,572 - autonomous_wallet - INFO - 🔍 Scanning all balances on KuCoin
+2025-06-23 22:19:29,638 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:29,741 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:29,742 - autonomous_wallet - INFO -   📊 USDT: 617.01991362 (≈ $617.02 USD)
+2025-06-23 22:19:29,766 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:29,867 - autonomous_wallet - INFO - 🔍 Scanning all balances on Kraken
+2025-06-23 22:19:29,884 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:29,895 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $11,815.48
+2025-06-23 22:19:29,986 - autonomous_wallet - INFO - 🔍 Scanning all balances on KuCoin
+2025-06-23 22:19:29,998 - autonomous_wallet - INFO - 🔍 Scanning all balances on Coinbase
+2025-06-23 22:19:29,999 - autonomous_wallet - INFO -   📊 BTC: 0.13642500 (≈ $14,368.14 USD)
+2025-06-23 22:19:30,055 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $617.02
+2025-06-23 22:19:30,159 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:30,276 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:30,377 - autonomous_wallet - INFO - 🔍 Scanning all balances on Kraken
+2025-06-23 22:19:30,410 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:30,412 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $14,368.14
+2025-06-23 22:19:30,474 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:30,513 - autonomous_wallet - INFO - 🔍 Scanning all balances on KuCoin
+2025-06-23 22:19:30,514 - autonomous_wallet - INFO - 🔍 Scanning all balances on Coinbase
+2025-06-23 22:19:30,516 - autonomous_wallet - INFO -   📊 BTC: 0.14337160 (≈ $15,099.75 USD)
+2025-06-23 22:19:30,575 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:30,781 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:30,825 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:30,883 - autonomous_wallet - INFO - 🔍 Scanning all balances on KuCoin
+2025-06-23 22:19:30,884 - autonomous_wallet - INFO -   📊 USDT: 150.93690660 (≈ $150.94 USD)
+2025-06-23 22:19:30,920 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $15,099.75
+2025-06-23 22:19:30,926 - autonomous_wallet - INFO - 🔍 Scanning all balances on Kraken
+2025-06-23 22:19:30,927 - autonomous_wallet - INFO -   📊 USDT: 867.88595396 (≈ $867.89 USD)
+2025-06-23 22:19:31,021 - autonomous_wallet - INFO - 🔍 Scanning all balances on Coinbase
+2025-06-23 22:19:31,022 - autonomous_wallet - INFO -   📊 BTC: 0.10802058 (≈ $11,376.62 USD)
+2025-06-23 22:19:31,109 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:31,127 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $867.89
+2025-06-23 22:19:31,209 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:31,226 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $11,376.62
+2025-06-23 22:19:31,236 - autonomous_wallet - INFO - 🔍 Scanning all balances on Kraken
+2025-06-23 22:19:31,237 - autonomous_wallet - INFO -   📊 USDT: 948.45234779 (≈ $948.45 USD)
+2025-06-23 22:19:31,236 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $150.94
+2025-06-23 22:19:31,327 - autonomous_wallet - INFO - 🔍 Scanning all balances on Coinbase
+2025-06-23 22:19:31,328 - autonomous_wallet - INFO -   📊 BTC: 0.10392352 (≈ $10,945.12 USD)
+2025-06-23 22:19:31,341 - autonomous_wallet - INFO - 🔍 Scanning all balances on KuCoin
+2025-06-23 22:19:31,344 - autonomous_wallet - INFO -   📊 USDT: 672.02064498 (≈ $672.02 USD)
+2025-06-23 22:19:31,639 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $948.45
+2025-06-23 22:19:31,740 - autonomous_wallet - INFO - 🔍 Scanning all balances on Kraken
+2025-06-23 22:19:31,768 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:19:31,866 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $672.02
+2025-06-23 22:19:31,869 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:44,825 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:19:44,826 - autonomous_wallet - INFO -   📊 USDT: 251.91611863 (≈ $251.92 USD)
+2025-06-23 22:19:45,166 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $251.92
+2025-06-23 22:19:45,168 - system_monitor - INFO - 🔍 Sistema di monitoraggio avviato
+2025-06-23 22:19:52,169 - system_monitor - INFO - 🛑 Sistema di monitoraggio fermato
+2025-06-23 22:34:15,682 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:34:15,767 - autonomous_wallet - INFO -   📊 BTC: 0.13137448 (≈ $13,917.02 USD)
+2025-06-23 22:34:15,844 - autonomous_wallet - INFO -   📊 ETH: 1.74051601 (≈ $4,223.94 USD)
+2025-06-23 22:34:15,918 - autonomous_wallet - INFO -   📊 MATIC: 9.86835619 (≈ $1.80 USD)
+2025-06-23 22:34:15,996 - autonomous_wallet - INFO -   📊 LINK: 7.90457100 (≈ $101.89 USD)
+2025-06-23 22:34:16,059 - autonomous_wallet - INFO -   📊 UNI: 1.43795299 (≈ $9.91 USD)
+2025-06-23 22:34:16,164 - autonomous_wallet - INFO - ✅ Detected 5 currencies with total value $18,254.56
+2025-06-23 22:34:16,646 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:34:16,647 - autonomous_wallet - INFO -   📊 USDT: 683.54560575 (≈ $683.55 USD)
+2025-06-23 22:34:16,824 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $683.55
+2025-06-23 22:34:24,036 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:34:24,342 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:34:33,106 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:34:33,232 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:44:19,341 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:44:19,418 - autonomous_wallet - INFO -   📊 PEPE: 1,104,086.44208506 (≈ $10.92 USD)
+2025-06-23 22:44:19,500 - autonomous_wallet - INFO -   📊 MATIC: 34.63013473 (≈ $6.30 USD)
+2025-06-23 22:44:19,564 - autonomous_wallet - INFO -   📊 ADA: 153.96566357 (≈ $89.40 USD)
+2025-06-23 22:44:19,647 - autonomous_wallet - INFO -   📊 BNB: 3.01898927 (≈ $1,932.52 USD)
+2025-06-23 22:44:19,727 - autonomous_wallet - INFO -   📊 DOT: 23.89511367 (≈ $81.24 USD)
+2025-06-23 22:44:19,727 - autonomous_wallet - INFO - ✅ Detected 5 currencies with total value $2,120.38
+2025-06-23 22:44:48,847 - competitive_hft - INFO - 🚀 Competitive HFT Engine inizializzato
+2025-06-23 22:44:49,052 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:44:49,275 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:45:04,062 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:45:04,062 - autonomous_wallet - INFO -   📊 USDT: 714.75918968 (≈ $714.76 USD)
+2025-06-23 22:45:04,244 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:45:04,557 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $714.76
+2025-06-23 22:45:04,864 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:49:53,909 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:49:53,910 - autonomous_wallet - INFO -   📊 USDT: 160.67468606 (≈ $160.67 USD)
+2025-06-23 22:49:54,016 - autonomous_wallet - INFO -   📊 BTC: 0.11726710 (≈ $12,347.17 USD)
+2025-06-23 22:49:54,088 - autonomous_wallet - INFO -   📊 SOL: 38.16680980 (≈ $5,517.39 USD)
+2025-06-23 22:49:54,159 - autonomous_wallet - INFO -   📊 DOGE: 428.60684608 (≈ $70.15 USD)
+2025-06-23 22:49:54,266 - autonomous_wallet - INFO -   📊 MATIC: 34.12905143 (≈ $6.19 USD)
+2025-06-23 22:49:54,328 - autonomous_wallet - INFO -   📊 AVAX: 7.40875518 (≈ $132.69 USD)
+2025-06-23 22:49:54,410 - autonomous_wallet - INFO - ✅ Detected 6 currencies with total value $18,234.27
+2025-06-23 22:49:59,986 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:49:59,987 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:50:20,752 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:50:21,134 - autonomous_wallet - INFO - ✅ Detected 0 currencies with total value $0.00
+2025-06-23 22:50:40,895 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:50:40,896 - autonomous_wallet - INFO -   📊 USDT: 743.36020817 (≈ $743.36 USD)
+2025-06-23 22:50:41,238 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $743.36
+2025-06-23 22:50:43,547 - autonomous_wallet - INFO - 🔍 Scanning all balances on Bybit
+2025-06-23 22:50:43,548 - autonomous_wallet - INFO -   📊 USDT: 658.34003597 (≈ $658.34 USD)
+2025-06-23 22:50:44,164 - autonomous_wallet - INFO - ✅ Detected 1 currencies with total value $658.34
+2025-06-23 22:51:56,852 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:51:56,940 - autonomous_wallet - INFO -   📊 PEPE: 1,374,735.46037177 (≈ $13.58 USD)
+2025-06-23 22:51:57,001 - autonomous_wallet - INFO -   📊 DOT: 14.59438873 (≈ $49.62 USD)
+2025-06-23 22:51:57,002 - autonomous_wallet - INFO - ✅ Detected 2 currencies with total value $63.20
+2025-06-23 22:52:34,631 - competitive_hft - INFO - 🚀 Competitive HFT Engine inizializzato
+2025-06-23 22:53:44,724 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:53:44,790 - autonomous_wallet - INFO -   📊 SOL: 31.26787589 (≈ $4,521.65 USD)
+2025-06-23 22:53:44,864 - autonomous_wallet - INFO -   📊 UNI: 1.51493503 (≈ $10.29 USD)
+2025-06-23 22:53:44,865 - autonomous_wallet - INFO - ✅ Detected 2 currencies with total value $4,531.93
+2025-06-23 22:53:45,407 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:53:45,408 - autonomous_wallet - INFO -   📊 USDT: 690.55469793 (≈ $690.55 USD)
+2025-06-23 22:53:45,468 - autonomous_wallet - INFO -   📊 BTC: 0.11249944 (≈ $11,846.19 USD)
+2025-06-23 22:53:45,527 - autonomous_wallet - INFO -   📊 ETH: 0.14858745 (≈ $356.42 USD)
+2025-06-23 22:53:45,590 - autonomous_wallet - INFO -   📊 MATIC: 72.13399216 (≈ $13.08 USD)
+2025-06-23 22:53:45,834 - autonomous_wallet - INFO - ✅ Detected 4 currencies with total value $12,906.24
+2025-06-23 22:54:47,738 - autonomous_wallet - INFO - 🔍 Scanning all balances on Binance
+2025-06-23 22:54:47,821 - autonomous_wallet - INFO -   📊 ETH: 1.10137308 (≈ $2,642.60 USD)
+2025-06-23 22:54:47,916 - autonomous_wallet - INFO -   📊 DOGE: 305.09326908 (≈ $50.02 USD)
+2025-06-23 22:54:47,980 - autonomous_wallet - INFO -   📊 ADA: 322.52987777 (≈ $187.31 USD)
+2025-06-23 22:54:48,043 - autonomous_wallet - INFO -   📊 LINK: 11.50372286 (≈ $147.36 USD)
+2025-06-23 22:54:48,110 - autonomous_wallet - INFO -   📊 UNI: 6.14011998 (≈ $41.69 USD)
+2025-06-23 22:54:48,279 - autonomous_wallet - INFO - ✅ Detected 5 currencies with total value $3,068.99
+2025-06-23 22:56:25,567 - system_monitor - INFO - 🔍 Sistema di monitoraggio avviato
+2025-06-23 23:04:43,769 - system_monitor - INFO - 🔍 Sistema di monitoraggio avviato
+2025-06-23 23:06:55,575 - system_monitor - INFO - 🔍 Sistema di monitoraggio avviato
+2025-06-23 23:25:49,647 - competitive_hft - INFO - 🚀 Competitive HFT Engine inizializzato
+2025-06-23 23:50:04,594 - competitive_hft - INFO - 🚀 Competitive HFT Engine inizializzato

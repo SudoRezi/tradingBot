@@ -1,0 +1,38 @@
+{
+  "cross_exchange": {
+    "common_spreads": {
+      "binance_vs_coinbase": {
+        "avg_spread": "0.15%",
+        "max_observed": "2.3%",
+        "execution_time": "30-60 seconds",
+        "profit_after_fees": "0.05-0.1%"
+      },
+      "kucoin_vs_kraken": {
+        "avg_spread": "0.25%",
+        "volatile_periods": "Up to 1.5%",
+        "liquidity_note": "Check depth before execution"
+      }
+    },
+    "optimal_conditions": {
+      "high_volatility": "Spreads increase during price swings",
+      "news_events": "Temporary dislocations common",
+      "low_liquidity_hours": "Asian hours often best",
+      "network_congestion": "Withdrawal delays risk"
+    }
+  },
+  "funding_rate_arbitrage": {
+    "perpetual_futures": {
+      "positive_funding": "Long spot, short perpetual",
+      "negative_funding": "Short spot, long perpetual",
+      "typical_rates": "0.01% to 0.1% per 8 hours",
+      "annual_yield": "5-15% in neutral strategy"
+    }
+  },
+  "defi_arbitrage": {
+    "dex_cex": {
+      "uniswap_vs_binance": "Common during volatility",
+      "gas_costs": "Factor in Ethereum gas fees",
+      "slippage": "Higher on DEX for large orders"
+    }
+  }
+}

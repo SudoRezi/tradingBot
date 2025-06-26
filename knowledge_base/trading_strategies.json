@@ -1,0 +1,62 @@
+{
+  "scalping": {
+    "ema_bounce": {
+      "timeframe": "5m",
+      "indicators": [
+        "EMA21",
+        "RSI",
+        "Volume"
+      ],
+      "setup": "Price bounce off EMA21 with RSI oversold",
+      "entry": "Candle close above EMA21",
+      "stop_loss": "Below recent swing low",
+      "take_profit": "1:2 risk/reward",
+      "success_rate": 0.58,
+      "avg_return": "0.8%",
+      "max_drawdown": "-12%"
+    },
+    "breakout_retest": {
+      "description": "Breakout con retest di resistenza",
+      "success_rate": 0.65,
+      "optimal_volume": "150% above average",
+      "false_breakout_filter": "Wait for retest"
+    }
+  },
+  "swing_trading": {
+    "support_resistance": {
+      "timeframe": "4h to 1d",
+      "success_rate": 0.71,
+      "hold_time": "3-7 days average",
+      "risk_reward": "1:3 minimum"
+    },
+    "trend_following": {
+      "moving_average_system": {
+        "ma_fast": 20,
+        "ma_slow": 50,
+        "confirmation": "Volume + RSI",
+        "success_rate": 0.68
+      }
+    }
+  },
+  "arbitrage": {
+    "cross_exchange": {
+      "min_spread": "0.3%",
+      "execution_time": "< 30 seconds",
+      "success_rate": 0.85,
+      "risk_factors": [
+        "Withdrawal delays",
+        "Network congestion"
+      ],
+      "optimal_pairs": [
+        "BTC/USDT",
+        "ETH/USDT",
+        "BNB/USDT"
+      ]
+    },
+    "triangular": {
+      "min_profit": "0.2%",
+      "frequency": "High during volatility",
+      "automated_execution": "Required"
+    }
+  }
+}
