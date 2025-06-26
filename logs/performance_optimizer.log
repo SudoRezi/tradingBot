@@ -33,3 +33,6 @@
 2025-06-26 10:13:25,177 - smart_performance_optimizer - INFO - 🔄 Ottimizzazione continua avviata
 2025-06-26 12:15:50,336 - advanced_order_system - INFO - Order submitted: ORD_ED93D518 - BTC/USD buy 0.001
 2025-06-26 12:15:50,386 - advanced_order_system - INFO - Order cancelled: ORD_ED93D518
+2025-06-26 23:40:51,923 - simple_api_manager - ERROR - Error storing API credentials: 'st.session_state has no key "simple_api_storage". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization'
+2025-06-26 23:43:44,734 - simple_api_manager - INFO - API credentials stored for Bybit
+2025-06-26 23:43:58,851 - simple_api_manager - INFO - API credentials stored for Bybit
