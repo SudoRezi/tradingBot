@@ -191,12 +191,16 @@ class AdvancedAITradingSystem:
     def initialize_advanced_systems(self):
         """Inizializza tutti i sistemi avanzati"""
         try:
-            # Inizializza Security System
+            # Inizializza Security System - usa sistema semplificato per API
             try:
+                from simple_api_manager import get_simple_api_manager
+                self.api_manager = get_simple_api_manager()
                 from multilayer_api_protection import MultilayerAPIProtection
                 self.multilayer_protection = MultilayerAPIProtection()
                 self.security_system = self.multilayer_protection
             except ImportError:
+                from simple_api_manager import SimpleAPIManager
+                self.api_manager = SimpleAPIManager()
                 self.multilayer_protection = None
                 self.security_system = None
             
@@ -274,6 +278,89 @@ class AdvancedAITradingSystem:
     
     def render_main_dashboard(self):
         """Dashboard principale avanzato"""
+        
+        # CSS per tab scrollabili e responsive
+        st.markdown("""
+        <style>
+        /* Tab container responsive */
+        .stTabs [data-baseweb="tab-list"] {
+            gap: 2px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            scrollbar-width: thin;
+            scrollbar-color: #888 #f1f1f1;
+            padding-bottom: 10px;
+            max-width: 100%;
+            width: 100%;
+        }
+        
+        /* Webkit scrollbar per Chrome/Safari */
+        .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        
+        .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        
+        .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        /* Tab individuali */
+        .stTabs [data-baseweb="tab"] {
+            min-width: 120px;
+            font-size: 13px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin: 0 2px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        /* Tab attivo */
+        .stTabs [aria-selected="true"] {
+            background-color: #0066cc;
+            color: white;
+            font-weight: bold;
+        }
+        
+        /* Tab inattivi */
+        .stTabs [aria-selected="false"] {
+            background-color: #f0f2f6;
+            color: #333;
+        }
+        
+        /* Hover effect */
+        .stTabs [data-baseweb="tab"]:hover {
+            background-color: #4c8cbf;
+            color: white;
+            transition: all 0.2s ease;
+        }
+        
+        /* Container principale */
+        .main > div {
+            padding-top: 1rem;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .stTabs [data-baseweb="tab"] {
+                min-width: 100px;
+                font-size: 11px;
+                padding: 6px 8px;
+            }
+        }
+        </style>
+        """, unsafe_allow_html=True)
+        
         tabs = st.tabs([
             "🚀 Setup & Control", 
             "📊 Live Trading", 
@@ -982,21 +1069,25 @@ pip install arcticdb
                     
                     if st.button(f"Connect {exchange}", key=f"connect_{exchange}"):
                         if api_key and api_secret:
-                            # Crittografa credenziali se il sistema di sicurezza è disponibile
-                            if hasattr(self, 'security_system') and self.security_system:
+                            # Usa sistema API semplificato che evita doppia crittografia
+                            if hasattr(self, 'api_manager') and self.api_manager:
                                 credentials = {
                                     'api_key': api_key,
-                                    'api_secret': api_secret,
-                                    'testnet': testnet
+                                    'secret_key': api_secret
                                 }
                                 
-                                success = self.security_system.encrypt_api_credentials(exchange, credentials)
+                                # Test connessione prima di salvare
+                                test_result = self.api_manager.test_api_connection(exchange, credentials)
                                 
-                                if success:
+                                if test_result.get('success', False):
+                                    # Salva credenziali
+                                    api_id = self.api_manager.store_api_credentials(exchange, credentials)
+                                    
                                     config = {
-                                        'encrypted': True,
+                                        'api_id': api_id,
                                         'testnet': testnet,
-                                        'status': 'connected'
+                                        'status': 'connected',
+                                        'exchange': exchange
                                     }
                                     
                                     if 'exchange_configs' not in st.session_state:
@@ -1008,17 +1099,13 @@ pip install arcticdb
                                     if exchange not in st.session_state.selected_exchanges:
                                         st.session_state.selected_exchanges.append(exchange)
                                     
-                                    st.success(f"🔒 {exchange} connected securely with encryption!")
-                                    
-                                    # Log accesso sicuro
-                                    self.security_system.log_access_attempt(
-                                        f"Exchange_{exchange}", True, exchange
-                                    )
+                                    st.success(f"✅ {exchange} connected successfully!")
+                                    st.info(f"API ID: {api_id}")
                                     
                                     time.sleep(1)
                                     st.rerun()
                                 else:
-                                    st.error("Failed to encrypt credentials securely")
+                                    st.error(f"Connection failed: {test_result.get('error', 'Unknown error')}")
                             else:
                                 # Fallback senza crittografia
                                 config = {

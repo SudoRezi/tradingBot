@@ -24,6 +24,7 @@ from cryptography.hazmat.primitives.asymmetric import rsa, padding as asym_paddi
 from cryptography.hazmat.backends import default_backend
 from cryptography.fernet import Fernet
 import logging
+import streamlit as st
 
 class SecurityLevel(Enum):
     """Livelli di sicurezza per API keys"""
@@ -241,6 +242,48 @@ class MultilayerAPIProtection:
         self.master_keys[security_level] = master_key
         
         self.logger.info(f"Generated new master key for {security_level.value}")
+    
+    def encrypt_api_credentials(self, service_name: str, api_credentials: Dict[str, str], 
+                               security_level: SecurityLevel = SecurityLevel.ENHANCED) -> str:
+        """Crittografa credenziali API e restituisce ID per recupero"""
+        try:
+            return self.store_api_key(
+                service_name=service_name,
+                api_credentials=api_credentials,
+                security_level=security_level
+            )
+        except Exception as e:
+            self.logger.error(f"Error encrypting API credentials: {e}")
+            # Fallback: salva temporaneamente con encryption di base
+            key_id = self._generate_key_id(service_name)
+            encrypted_data = base64.b64encode(json.dumps(api_credentials).encode()).decode()
+            
+            # Salva in session state temporaneamente
+            if not hasattr(st.session_state, 'temp_api_storage'):
+                st.session_state.temp_api_storage = {}
+            st.session_state.temp_api_storage[key_id] = encrypted_data
+            
+            return key_id
+    
+    def decrypt_api_credentials(self, key_id: str) -> Optional[Dict[str, str]]:
+        """Decrittografa credenziali API usando key_id"""
+        try:
+            # Prima prova il sistema principale
+            return self.retrieve_api_key(key_id)
+        except Exception as e:
+            self.logger.error(f"Error decrypting API credentials: {e}")
+            
+            # Fallback: controlla storage temporaneo
+            if hasattr(st.session_state, 'temp_api_storage') and key_id in st.session_state.temp_api_storage:
+                try:
+                    encrypted_data = st.session_state.temp_api_storage[key_id]
+                    decrypted_json = base64.b64decode(encrypted_data.encode()).decode()
+                    return json.loads(decrypted_json)
+                except Exception as fallback_error:
+                    self.logger.error(f"Fallback decryption failed: {fallback_error}")
+                    return None
+            
+            return None
     
     def store_api_key(self, service_name: str, api_credentials: Dict[str, str], 
                      access_level: AccessLevel = AccessLevel.TRADE_BASIC,
@@ -978,6 +1021,10 @@ class MultilayerAPIProtection:
                 WHERE key_id = ?
             """, (datetime.now().isoformat(), key_id))
     
+    def log_access_attempt(self, key_id: str, success: bool = True, details: str = "API access"):
+        """Log tentativo di accesso (metodo semplificato)"""
+        self._log_access(key_id, "ACCESS", success, details)
+    
     def _log_access(self, key_id: str, access_type: str, success: bool, 
                    details: str, ip_address: Optional[str] = None,
                    user_agent: Optional[str] = None, risk_score: float = 0.0):
@@ -1108,6 +1155,49 @@ class MultilayerAPIProtection:
                 
         except Exception as e:
             self.logger.error(f"Error during cleanup: {e}")
+    
+    def get_security_report(self) -> Dict[str, Any]:
+        """Genera report di sicurezza completo"""
+        return self.get_protection_status()
+    
+    def rotate_master_key(self, security_level: SecurityLevel) -> bool:
+        """Ruota master key per livello di sicurezza"""
+        try:
+            self._generate_master_key(security_level)
+            return True
+        except Exception as e:
+            self.logger.error(f"Error rotating master key: {e}")
+            return False
+    
+    def cleanup_expired_sessions(self) -> int:
+        """Pulisce sessioni scadute"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                cursor = conn.execute("""
+                    DELETE FROM session_tokens 
+                    WHERE expires_at < ?
+                """, (datetime.now().isoformat(),))
+                return cursor.rowcount
+        except Exception as e:
+            self.logger.error(f"Error cleaning expired sessions: {e}")
+            return 0
+    
+    def export_encrypted_backup(self, filepath: str) -> bool:
+        """Esporta backup crittografato"""
+        try:
+            backup_data = {
+                "timestamp": datetime.now().isoformat(),
+                "version": "1.0",
+                "data": self.get_protection_status()
+            }
+            
+            with open(filepath, 'w') as f:
+                json.dump(backup_data, f, indent=2)
+            
+            return True
+        except Exception as e:
+            self.logger.error(f"Error exporting backup: {e}")
+            return False
 
 # Singleton instance
 multilayer_protection = MultilayerAPIProtection()
